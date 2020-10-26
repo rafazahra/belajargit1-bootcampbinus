@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Pertambahan</title>
+</head>
+<body>
+
+    <hr><h1 align= "center" style="background-color:lightpink;">---Kalkulator &nbsp; Pertambahan---</h1><hr>
+    <br><br><br><br><br>
+    <center>
+    <input type="number" id="angkapertama">
+    <input type="number" id="angkakedua">
+    <button onclick="hitungTambah()">HITUNG</button>
+    <br/>
+    <p id="hasiloutput"></p>
+    
+    <script>
+        function hitungTambah(){
+            var angka1 =document.getElementById('angkapertama').value;
+            var angka2 =document.getElementById('angkakedua').value;
+            var hasil = parseInt(angka1) + parseInt(angka2);
+            document.getElementById('hasiloutput').innerHTML =hasil;
+        }
+    </script>
+    </center>
+    
+    
+</body>
+</html>
